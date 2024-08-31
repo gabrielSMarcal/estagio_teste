@@ -8,14 +8,14 @@ faturamento = {
     'Outros': 19849.53,
 }
 
-# Pega valores contidos no dicionário acima e organiza em um arquivo .json
+# Pega valores contidos no dicionário acima e organiza em um arquivo .json;
 with open ('faturamento.json', 'w') as arquivo:
     json.dump (faturamento, arquivo)
 
-# Calcula o faturamento total
+# Calcula o faturamento total;
 faturamento_total = sum (faturamento.values())
 
-# Calcula e imprime o percentual de representação de cada estado
+# Calcula e imprime o percentual de representação de cada estado;
 print ('Percentual de representação por estado:')
 for estado, valor in faturamento.items():
     percentual = (valor / faturamento_total) * 100

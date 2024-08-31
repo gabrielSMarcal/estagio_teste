@@ -5,7 +5,7 @@ def string_invertida(texto):
     string_invertida += texto[i]
   return string_invertida
 
-texto_original = input('Digite a palavra/frase que deseja que seja invertida \'-\' > .-.: ')
+texto_original = input('Digite a palavra ou frase que deseja que seja invertida \'-\' > .-.: ')
 
 texto_invertido = string_invertida(texto_original)
 print('***************************************************************')
